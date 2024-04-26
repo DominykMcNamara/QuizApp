@@ -54,3 +54,5 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', LogoutController::class)
         ->name('logout');
 });
+
+Route::post('/toggle-theme', 'ThemeController@toggleTheme')->name('toggle-theme');
