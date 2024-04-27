@@ -3,10 +3,8 @@
 @section('content')
 
 
-    <div class=" min-h-screen bg-pattern-background-desktop-light bg-cover bg-center
-    dark:bg-pattern-background-desktop-dark
-    dark:text-white ">
-    <livewire:theme-toggle />
+    <div>
+<!--
         @if (Route::has('login'))
             <div class="p-6 text-right sm:fixed sm:top-0 sm:right-0">
                 @auth
@@ -114,4 +112,5 @@
             </div>
         </div>
     </div>
+    !-->
 @endsection

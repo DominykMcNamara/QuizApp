@@ -11,38 +11,25 @@ module.exports = {
             fontSize: {
                 'display': ['144px', {
                     lineHeight: '100%',
-                    weight: 'medium',
                 }],
-                'hl-bold': ['64px', {
+                'hl': ['64px', {
                     lineHeight: '100%',
-                    weight: 'medium'
                 }],
-                'hl-regular': ['64px', {
-                    lineHeight: '100%',
-                    weight: 'regular'
-                }],
+
                 'hm': ['36px', {
                     lineHeight: '100%',
-                    weight: 'regular'
                 }],
                 'hs': ['28px', {
                     lineHeight: '100%',
-                    weight: 'regular'
                 }],
                 'bm': ['12px', {
                     lineHeight: '150%',
-                    weight: 'regular'
                 }],
-                'bs': ['12px', {
-                    lineHeight: '150%',
-                    weight: 'regular-italic'
-                }]
-
             },
             screens: {
                 'desktop': '1440px',
                 'tablet': '768px',
-                'mobile': '375px'
+                'mobile': '344px'
             },
             backgroundImage: {
                 'icon-accessibility': "url('/public/assets/images/icon-accessibility.svg')",
@@ -63,6 +50,14 @@ module.exports = {
                 'pattern-background-desktop-dark': "url('/public/assets/images/pattern-background-desktop-dark.svg')",
                 'pattern-background-mobile-dark': "url('/public/assets/images/pattern-background-mobile-dark.svg')",
 
+            },
+            colors: {
+                'light-bluish': '#ABC1E1',
+                'navy': '#3B4D66',
+                'light-grey': '#F4F6FA',
+                'white': '#FFFFFF',
+                'green': '#26D782',
+                'red': '#EE5454',
             }
         },
 

@@ -2,7 +2,8 @@
 
 use App\Http\Controllers\Auth\EmailVerificationController;
 use App\Http\Controllers\Auth\LogoutController;
-use App\Livewire\Auth\Login;
+    use App\Http\Controllers\ThemeController;
+    use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Passwords\Confirm;
 use App\Livewire\Auth\Passwords\Email;
 use App\Livewire\Auth\Passwords\Reset;
@@ -21,15 +22,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'welcome')->name('home');
+Route::view('/', 'register')->name('register');
 
 Route::middleware('guest')->group(function () {
     Route::get('login', Login::class)
         ->name('login');
-
-    Route::get('register', Register::class)
-        ->name('register');
 });
+
 
 Route::get('password/reset', Email::class)
     ->name('password.request');
@@ -55,4 +54,4 @@ Route::middleware('auth')->group(function () {
         ->name('logout');
 });
 
-Route::post('/toggle-theme', 'ThemeController@toggleTheme')->name('toggle-theme');
+Route::post('/toggle-theme', [ThemeController::class, 'toggleTheme'])->name('toggle-theme');

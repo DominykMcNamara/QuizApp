@@ -25,11 +25,18 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
-<body>
-
+<body class=" min-h-screen
+    bg-white
+    bg-pattern-background-mobile-light
+    desktop:bg-pattern-background-desktop-light
+    tablet:bg-pattern-background-tablet-light bg-cover bg-center
+    dark:bg-navy
+    dark:bg-pattern-background-mobile-dark
+    dark:tablet:bg-pattern-background-tablet-dark
+    dark:desktop:bg-pattern-background-desktop-dark
+    dark:text-white ">
+<x-Navbar />
 @yield('body')
-@livewire('theme-toggle')
-
 
 </body>
 </html>
