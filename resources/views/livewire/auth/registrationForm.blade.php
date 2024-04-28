@@ -88,7 +88,7 @@
 
                 <div class="mt-6">
                     <span class="block w-full rounded-md shadow-sm">
-                        <button type="submit" class="bg-purple text-white w-full text-center py-2 px-4
+                        <button type="submit" class="bg-purple hover:opacity-80 text-white w-full text-center py-2 px-4
                         rounded-md">
                             Register
                         </button>
