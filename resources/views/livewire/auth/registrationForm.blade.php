@@ -1,7 +1,4 @@
-@section('title', 'Create a new account')
-
 <div>
-
     <div class="mt-8 mobile:w-full   tablet:mx-auto  tablet:w-1/2 desktop:w-full tablet:flex tablet:flex-col">
         <div class= "px-6 py-8   sm:rounded-lg sm:px-10">
             <form wire:submit.prevent="register">

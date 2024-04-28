@@ -10,7 +10,7 @@ use Illuminate\Auth\Events\Registered;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
-class Register extends Component
+class RegistrationForm extends Component
 {
     use WithFileUploads;
     /** @var string */
@@ -54,6 +54,6 @@ class Register extends Component
 
     public function render()
     {
-        return view('livewire.auth.register')->extends('layouts.auth');
+        return view('livewire.auth.registrationForm')->extends('layouts.auth');
     }
 }

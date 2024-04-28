@@ -13,7 +13,7 @@
         </div>
 
 <div class="desktop:mx-auto">
-        @livewire('auth.register')
+        @livewire('auth.registrationForm')
     <</div>
     </div>
 
