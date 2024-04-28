@@ -25,9 +25,7 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'register')->name('register');
 
 Route::middleware('guest')->group(function () {
-    Route::view('register', 'register')->name('register');
-    Route::get('login', Login::class)
-        ->name('login');
+    Route::view('/login', 'login')->name('login');
 });
 
 

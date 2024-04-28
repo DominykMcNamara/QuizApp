@@ -14,7 +14,7 @@
 
 <div class="desktop:mx-auto">
         @livewire('auth.registrationForm')
-    <</div>
+    </div>
     </div>
 
 @endSection
