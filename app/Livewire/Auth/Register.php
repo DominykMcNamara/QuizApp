@@ -49,7 +49,7 @@ class Register extends Component
 
         Auth::login($user, true);
 
-        return redirect('/')->with('success', 'Your account has been created.');
+        return redirect('/')->with('status', 'Your account has been created.');
     }
 
     public function render()
