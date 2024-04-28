@@ -8,11 +8,13 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Auth\Events\Registered;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class Register extends Component
 {
+    use WithFileUploads;
     /** @var string */
-    public $name = '';
+    public $username = '';
 
     /** @var string */
     public $email = '';
@@ -21,19 +23,25 @@ class Register extends Component
     public $password = '';
 
     /** @var string */
+    public $photo= '';
+
+    /** @var string */
     public $passwordConfirmation = '';
 
     public function register()
     {
         $this->validate([
-            'name' => ['required'],
+            'username' => ['required', 'unique:users', 'string', 'max:100', 'min:3'],
             'email' => ['required', 'email', 'unique:users'],
+            'photo' => ['image'],
             'password' => ['required', 'min:8', 'same:passwordConfirmation'],
+            'passwordConfirmation' => ['required'],
         ]);
 
         $user = User::create([
+            'username' => $this->username,
             'email' => $this->email,
-            'name' => $this->name,
+            'photo' => $this->photo ? $this->photo->storeAs('public/photos', $this->photo->getClientOriginalName()): null,
             'password' => Hash::make($this->password),
         ]);
 
@@ -41,7 +49,7 @@ class Register extends Component
 
         Auth::login($user, true);
 
-        return redirect()->intended(route('home'));
+        return redirect('/')->with('success', 'Your account has been created.');
     }
 
     public function render()
