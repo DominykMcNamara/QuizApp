@@ -49,7 +49,7 @@ class RegistrationForm extends Component
 
         Auth::login($user, true);
 
-        return redirect('/')->with('status', 'Your account has been created.');
+        return redirect('/quizselection')->with('message', 'Your account has been created.');
     }
 
     public function render()

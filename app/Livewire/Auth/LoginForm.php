@@ -30,8 +30,8 @@ class LoginForm extends Component
 
             return;
         }
-
-        return redirect()->intended(route('home'));
+        session()->flash('message', 'Welcome Back!');
+        $this->redirect('/quizselection');
     }
 
     public function render()

@@ -36,6 +36,11 @@
     dark:desktop:bg-pattern-background-desktop-dark
     dark:text-white ">
 <x-Navbar />
+@if (session('message'))
+    <div class="text-green text-hm font-bold text-center my-5">
+        {{ session('message') }}
+    </div>
+@endif
 @yield('body')
 
 </body>
