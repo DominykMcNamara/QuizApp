@@ -9,7 +9,7 @@
                 <span class="text-hm tablet:text-hl font-bold">Frontend Quiz!</span>
             </h1>
             <p class="text-sm italic my-5">Please log in to continue</p>
-            <a href="{{ route('register') }}" class="text-sm font-bold cursor-pointer">Don't have an account? <span
+            <a href="/register" class="text-sm font-bold cursor-pointer">Don't have an account? <span
                     class="hover:text-light-bluish">Register</span></a>
         </div>
 

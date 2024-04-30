@@ -11,5 +11,7 @@
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             @csrf
         </form>
+        <img src="storage/{{ Auth::user()->photo }}" alt="{{ Auth::user()->username }}" class="w-12 h-12
+        rounded-full" >
     @endauth
 </nav>

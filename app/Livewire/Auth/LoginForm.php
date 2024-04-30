@@ -21,7 +21,7 @@ class LoginForm extends Component
         'password' => ['required'],
     ];
 
-    public function authenticate()
+    public function authenticate(): void
     {
         $this->validate();
 
@@ -31,10 +31,10 @@ class LoginForm extends Component
             return;
         }
         session()->flash('message', 'Welcome Back!');
-        $this->redirect('/quizselection');
+        $this->redirect('/');
     }
 
-    public function render()
+    public function render(): \Illuminate\View\View
     {
         return view('livewire.auth.loginForm');
     }
