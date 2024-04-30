@@ -53,7 +53,7 @@
 
             Auth::login($user, true);
 
-            return redirect('/quizselection')->with('message', 'Your account has been created.');
+            return redirect('/')->with('message', 'Your account has been created.');
         }
 
         public function render()
