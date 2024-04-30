@@ -7,6 +7,7 @@
     use Illuminate\Auth\Events\Registered;
     use Illuminate\Support\Facades\Auth;
     use Illuminate\Support\Facades\Hash;
+    use Illuminate\Support\Facades\Redirect;
     use Livewire\Component;
     use Livewire\WithFileUploads;
 
@@ -56,7 +57,7 @@
             return redirect('/')->with('message', 'Your account has been created.');
         }
 
-        public function render()
+        public function render(): \Illuminate\View\View
         {
             return view('livewire.auth.registrationForm');
         }
