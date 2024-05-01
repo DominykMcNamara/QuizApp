@@ -12,9 +12,9 @@
                     class="hover:text-light-bluish">Login</span></a>
         </div>
 
-<div class="desktop:mx-auto">
-        @livewire('auth.registrationForm')
-    </div>
+        <div class="desktop:mx-auto">
+            @livewire('auth.registrationForm')
+        </div>
     </div>
 
 @endSection

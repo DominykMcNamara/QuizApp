@@ -8,7 +8,7 @@
 
                 <div class="mt-1 rounded-md shadow-sm">
                     <input wire:model.lazy="email" id="email" type="text" required autofocus
-                           class="appearance-none block w-full px-3 py-2  rounded-md
+                           class="appearance-none block w-full px-3 py-2 rounded-md
                                placeholder-light-grey border
                                transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('username')
                                 text-red border-red  focus:border-red  @enderror"/>
@@ -25,7 +25,7 @@
 
                 <div class="mt-1 rounded-md shadow-sm">
                     <input wire:model.lazy="password" id="password" type="password" required
-                           class="appearance-none block w-full px-3 py-2 border rounded-md placeholder-light-grey
+                           class="appearance-none  text-dark-navy block w-full px-3 py-2 border rounded-md placeholder-light-grey
                                 transition duration-150 ease-in-out sm:text-sm sm:leading-5
                                 @error('password') border-red text-red focus:border-red
                                 focus:ring-red @enderror"/>

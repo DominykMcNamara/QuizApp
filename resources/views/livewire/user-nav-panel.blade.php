@@ -8,7 +8,7 @@
         rounded-full cursor-pointer" >
         <div x-show="open" class="absolute w-32 h-32 ">
             <a href="{{ route('logout') }}"
-               class="  text-center hover:text-light-bluish hover:underline "
+               class="  text-center hover:text-light-bluish hover:underline dark:hover:text-light-bluish"
                onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
             >
                 Logout

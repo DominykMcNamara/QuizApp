@@ -9,7 +9,7 @@
 
                     <div class="mt-1 rounded-md shadow-sm">
                         <input wire:model.lazy="username" id="username" type="text" required autofocus
-                               class="appearance-none block w-full px-3 py-2  rounded-md
+                               class="appearance-none  text-dark-navy block w-full px-3 py-2  rounded-md
                                placeholder-light-grey border
                                transition duration-150 ease-in-out sm:text-sm sm:leading-5 @error('username')
                                 text-red border-red  focus:border-red  @enderror"/>
@@ -27,7 +27,7 @@
 
                     <div class="mt-1 rounded-md shadow-sm">
                         <input wire:model.lazy="email" id="email" type="email" required class="
-                        appearance-none block  placeholder-light-grey w-full px-3 py-2 border
+                        appearance-none block  text-dark-navy  placeholder-light-grey w-full px-3 py-2 border
                         rounded-md
                         focus:outline-none f transition duration-150 ease-in-out sm:text-sm sm:leading-5
                         @error('email') border-red text-red  focus:border-red focus:ring-red @enderror"/>
@@ -45,7 +45,7 @@
 
                     <div class="mt-1 rounded-md shadow-sm">
                         <input wire:model.lazy="photo" id="photo" type="file" class="appearance-none block
-                        w-full px-3 py-2 border rounded-md placeholder-light-grey
+                        w-full px-3 py-2 border  text-dark-navy rounded-md placeholder-light-grey
                         transition duration-150 ease-in-out sm:text-sm
                         sm:leading-5 @error('photo') border-red text-red
                         focus:border-red focus:ring-red @enderror"/>
@@ -63,7 +63,8 @@
 
                     <div class="mt-1 rounded-md shadow-sm">
                         <input wire:model.lazy="password" id="password" type="password" required
-                               class="appearance-none block w-full px-3 py-2 border rounded-md placeholder-light-grey
+                               class="appearance  text-dark-navy appearance-none block w-full px-3 py-2 border rounded-md
+                               placeholder-light-grey
                                 transition duration-150 ease-in-out sm:text-sm sm:leading-5
                                 @error('password') border-red text-red focus:border-red
                                 focus:ring-red @enderror"/>
@@ -82,7 +83,8 @@
                     <div class="mt-1 rounded-md shadow-sm">
                         <input wire:model.lazy="passwordConfirmation" id="password_confirmation" type="password"
                                required
-                               class="block w-full px-3 py-2 border appearance-none rounded-md  transition duration-150 ease-in-out sm:text-sm sm:leading-5"/>
+                               class="block  text-dark-navy w-full px-3 py-2 border appearance-none rounded-md  transition
+                               duration-150 ease-in-out sm:text-sm sm:leading-5"/>
                     </div>
                 </div>
 
