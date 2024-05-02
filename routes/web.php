@@ -33,7 +33,7 @@
             ->name('logout');
     });
 
-    Route::post('/toggle-theme', [ThemeController::class, 'toggleTheme'])->name('toggle-theme');
+    // Route::post('/toggle-theme', [ThemeController::class, 'toggleTheme'])->name('toggle-theme');
 
 /////////////////////////////////////////////////////////////////
 
